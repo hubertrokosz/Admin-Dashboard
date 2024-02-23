@@ -130,7 +130,59 @@
 
 .main-content {
     background-color: #e1e8f0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
+
+.container {
+    grid-row: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    padding: 25px;
+    gap: 25px   
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    height: 100%;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 10px solid #eeb32f;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.card p {
+    color: grey;
+}
+
+card.text {
+    text-align: left;
+}
+
+.card .icons {
+    text-align: right;
+}
+
+.announcements {
+    background-color: #facc16;
+}
+
+.trending {
+    background-color: blueviolet;
+}
+
 
 
 
